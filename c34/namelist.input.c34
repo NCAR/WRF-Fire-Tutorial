@@ -79,7 +79,7 @@
  radt                                = 10,    5,
  sf_sfclay_physics                   = 1,     1,
  sf_surface_physics                  = 2,     2,
- bl_pbl_physics                      = 5,     0,
+ bl_pbl_physics                      = 1,     0,
  bl_mynn_tkeadvect                   = .true., .true.,
  bldt                                = 0,     0,
  cu_physics                          = 0,     0,
