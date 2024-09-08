@@ -1,0 +1,22 @@
+===============================
+name=ZSF
+        priority = 1
+        dest_type = continuous
+        df_dx=DZDXF
+        df_dy=DZDYF
+        smooth_option = smth-desmth_special; smooth_passes=1
+        halt_on_missing=no
+        interp_option = default:average_gcell(4.0)+four_pt+average_4pt
+        rel_path= default:topo_30m_c34/
+        subgrid=yes
+==============================
+name=NFUEL_CAT
+        priority=1
+        dest_type=categorical
+        dominant_only=NFUEL_CAT
+        z_dim_name=fuel_cat
+        halt_on_missing=no
+        interp_option=default:nearest_neighbor
+        rel_path= default:sb40_c34_2020/
+        subgrid=yes
+==============================

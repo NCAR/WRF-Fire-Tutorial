@@ -1,0 +1,52 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 2,
+ start_date = '2019-02-13_21:00:00','2019-02-13_21:00:00',
+ end_date   = '2019-02-14_03:00:00','2019-02-14_03:00:00',
+ interval_seconds = 3600
+ io_form_geogrid  = 2,
+ subgrid_ratio_x  = 1, 4
+ subgrid_ratio_y  = 1, 4
+/
+
+&geogrid
+ parent_id         =   1,   1,
+ parent_grid_ratio =   1,   9,
+ i_parent_start    =   1,  52,
+ j_parent_start    =   1,  52,
+ e_we              = 118, 118,
+ e_sn              = 118, 118,
+ !
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ ! The default datasets used to produce the MAXSNOALB and ALBEDO12M
+ ! fields have changed in WPS v4.0. These fields are now interpolated
+ ! from MODIS-based datasets.
+ !
+ ! To match the output given by the default namelist.wps in WPS v3.9.1,
+ ! the following setting for geog_data_res may be used:
+ !
+ ! geog_data_res = 'maxsnowalb_ncep+albedo_ncep+default', 'maxsnowalb_ncep+albedo_ncep+default', 
+ !
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ !
+ geog_data_res = 'nlcd2011_9s+30s', 'nlcd2011_9s+30s',
+ dx = 1000,
+ dy = 1000,
+ map_proj = 'lambert',
+ ref_lat   =  37.06230,
+ ref_lon   = -102.5247,
+ truelat1  =  37.06230,
+ truelat2  =  37.06230,
+ stand_lon = -102.5247,
+ geog_data_path = '/glade/work/tjuliano/fire/unr/WPS_GEOG/'
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'FILE',
+/
+
+&metgrid
+ fg_name = 'FILE',
+ io_form_metgrid = 2, 
+/

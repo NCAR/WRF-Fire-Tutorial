@@ -17,6 +17,6 @@ name=NFUEL_CAT
         z_dim_name=fuel_cat
         halt_on_missing=no
         interp_option=default:nearest_neighbor
-        rel_path= default:sb40_c34_2020/
+        rel_path= default:sb40_c34_2014/
         subgrid=yes
 ==============================
