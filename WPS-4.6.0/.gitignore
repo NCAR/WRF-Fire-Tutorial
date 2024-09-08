@@ -1,6 +1,6 @@
-geogrid.exe
-ungrib.exe
-metgrid.exe
+#geogrid.exe
+#ungrib.exe
+#metgrid.exe
 configure.wps
 configure.wps.backup
 wps_config.cmake
