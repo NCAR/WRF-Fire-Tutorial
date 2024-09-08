@@ -8,7 +8,6 @@ module load ncarcompilers/1.0.0
 module load cray-mpich/8.1.29
 module load netcdf/4.9.2
 module load parallel-netcdf/1.12.3
-#module load hdf5/1.12.2
 module load hdf5/1.14.3
 module load udunits/2.2.28
 module load ncview/2.1.9

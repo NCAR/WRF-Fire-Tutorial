@@ -10,7 +10,7 @@
 # USE CAUTION WHEN ADDING WILDCARDS, as some builds use different filename   #
 # conventions than others                                                    #
 ##############################################################################
-*.exe
+#*.exe
 *.o
 *.mod
 *.a
@@ -23,11 +23,11 @@ _build*
 wrf_config.cmake
 
 # Executables when not featuring .exe suffix
-ndown
-real
-tc
-ideal
-wrf
+#ndown
+#real
+#tc
+#ideal
+#wrf
 
 # Model inputs/outputs
 wrfbdy_d*
